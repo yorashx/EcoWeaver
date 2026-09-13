@@ -50,7 +50,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 16,
     typicalCanopySpreadM: 14,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Parakeets", "Grey Slender Loris", "Tree Frogs"],
+    faunaAffinity: ["Parakeets", "Indian Giant Squirrel", "Tree Frogs"],
     nativeStatus: "Native"
   },
   {
@@ -138,7 +138,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Soil & Nitrogen Fixer",
-    faunaAffinity: ["Grey Slender Loris", "Tree Frogs", "Parakeets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Tree Frogs", "Parakeets"],
     nativeStatus: "Native"
   },
   {
@@ -176,7 +176,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Moths", "Nocturnal Pollinators", "Grey Slender Loris"],
+    faunaAffinity: ["Moths", "Nocturnal Pollinators", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -264,7 +264,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 19,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Indian Giant Squirrel", "Grey Slender Loris", "Civets", "Fruit Bats"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Civets", "Fruit Bats"],
     nativeStatus: "Native"
   },
   {
@@ -277,7 +277,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 16,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Bonnet Macaques", "Grey Slender Loris", "Flying Foxes"],
+    faunaAffinity: ["Bonnet Macaques", "Indian Giant Squirrel", "Flying Foxes"],
     nativeStatus: "Native"
   },
   {
@@ -303,7 +303,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Medicinal & Microclimate",
-    faunaAffinity: ["Asian Koel", "Tree Frogs", "Beneficial Insects", "Grey Slender Loris"],
+    faunaAffinity: ["Asian Koel", "Tree Frogs", "Beneficial Insects", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -390,7 +390,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 30,
     typicalCanopySpreadM: 24,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Myna", "Rosy Starling", "Giant Squirrel", "Langurs"],
+    faunaAffinity: ["Indian Giant Squirrel", "Myna", "Rosy Starling", "Giant Squirrel", "Langurs"],
     nativeStatus: "Native"
   },
   {
@@ -464,7 +464,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 17,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Fruit Bats", "Owls", "Grey Slender Loris"],
+    faunaAffinity: ["Fruit Bats", "Owls", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -490,7 +490,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 18,
     typicalCanopySpreadM: 8,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Civets", "Fruit Bats"],
+    faunaAffinity: ["Indian Giant Squirrel", "Civets", "Fruit Bats"],
     nativeStatus: "Native"
   },
   {
@@ -589,7 +589,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 38,
     typicalCanopySpreadM: 28,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Fruit Bats", "Grey Slender Loris", "Owls", "Indian Giant Squirrel"],
+    faunaAffinity: ["Fruit Bats", "Indian Giant Squirrel", "Owls", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -639,7 +639,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 19,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Woodpeckers", "Hornbills"],
+    faunaAffinity: ["Indian Giant Squirrel", "Woodpeckers", "Hornbills"],
     nativeStatus: "Native"
   },
   {
@@ -827,7 +827,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 20,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Woodpeckers", "Giant Honeybees"],
+    faunaAffinity: ["Indian Giant Squirrel", "Woodpeckers", "Giant Honeybees"],
     nativeStatus: "Native",
     conservationNote: "Vulnerable heritage hardwood"
   },
@@ -853,7 +853,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 16,
     ecologicalRole: "Soil & Nitrogen Fixer",
-    faunaAffinity: ["Grey Slender Loris", "Barbeting Birds", "Tree Frogs"],
+    faunaAffinity: ["Indian Giant Squirrel", "Barbeting Birds", "Tree Frogs"],
     nativeStatus: "Native"
   },
   {
@@ -903,7 +903,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 15,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Hornbills", "Arboreal Geckos"],
+    faunaAffinity: ["Indian Giant Squirrel", "Hornbills", "Arboreal Geckos"],
     nativeStatus: "Native"
   },
   {
@@ -940,7 +940,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 15,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Hornbills", "Fruit Pigeons", "Grey Slender Loris"],
+    faunaAffinity: ["Hornbills", "Fruit Pigeons", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -952,7 +952,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 30,
     typicalCanopySpreadM: 32,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Spotted Owlets", "Giant Squirrels", "Fruit Bats"],
+    faunaAffinity: ["Indian Giant Squirrel", "Spotted Owlets", "Giant Squirrels", "Fruit Bats"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -978,7 +978,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 26,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Fruit Bats", "Asian Koel", "Hornbills", "Barbets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Fruit Bats", "Asian Koel", "Hornbills", "Barbets"],
     nativeStatus: "Native"
   },
   {
@@ -991,7 +991,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 40,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Indian Giant Squirrel", "Spotted Owlets", "Civets", "Hornbills", "Over 40 Bird Species"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Spotted Owlets", "Civets", "Hornbills", "Over 40 Bird Species"],
     nativeStatus: "Native",
     conservationNote: "Supreme Cubbon Park keystone anchor"
   },
@@ -1005,7 +1005,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Fig Wasps", "Pigeons", "Lorises", "Bulbuls"],
+    faunaAffinity: ["Fig Wasps", "Pigeons", "Asian Palm Civets", "Bulbuls"],
     nativeStatus: "Native"
   },
   {
@@ -1018,7 +1018,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 28,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Giant Squirrel", "Barbets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Giant Squirrel", "Barbets"],
     nativeStatus: "Native"
   },
   {
@@ -1030,7 +1030,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 25,
     typicalCanopySpreadM: 24,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Tree Frogs", "Arboreal Bats", "Lorises"],
+    faunaAffinity: ["Tree Frogs", "Arboreal Bats", "Asian Palm Civets"],
     nativeStatus: "Native"
   },
   {
@@ -1056,7 +1056,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 25,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Koels", "Owlets", "Fig Wasps"],
+    faunaAffinity: ["Indian Giant Squirrel", "Koels", "Owlets", "Fig Wasps"],
     nativeStatus: "Native"
   },
   {
@@ -1081,7 +1081,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Civets", "Bonnet Macaques", "Over 30 bird species"],
+    faunaAffinity: ["Indian Giant Squirrel", "Civets", "Bonnet Macaques", "Over 30 bird species"],
     nativeStatus: "Native"
   },
   {
@@ -1094,7 +1094,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 30,
     typicalCanopySpreadM: 32,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Giant Flying Fox", "Koels", "Barbets", "Parakeets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Giant Flying Fox", "Koels", "Barbets", "Parakeets"],
     nativeStatus: "Native"
   },
   {
@@ -1107,7 +1107,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 28,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Hornbills", "Barbets", "Grey Slender Loris", "Giant Squirrel"],
+    faunaAffinity: ["Hornbills", "Barbets", "Indian Giant Squirrel", "Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -1170,7 +1170,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 14,
     ecologicalRole: "Nectar / Pollinator Anchor",
-    faunaAffinity: ["Sunbirds", "Parakeets", "Arboreal Bats", "Lorises"],
+    faunaAffinity: ["Sunbirds", "Parakeets", "Arboreal Bats", "Asian Palm Civets"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1220,7 +1220,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Tree Frogs", "Hornbills"],
+    faunaAffinity: ["Indian Giant Squirrel", "Tree Frogs", "Hornbills"],
     nativeStatus: "Native"
   },
   {
@@ -1244,7 +1244,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 30,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Giant Squirrel", "Raptors"],
+    faunaAffinity: ["Indian Giant Squirrel", "Giant Squirrel", "Raptors"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1294,7 +1294,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Woodpeckers", "Civets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Woodpeckers", "Civets"],
     nativeStatus: "Native"
   },
   {
@@ -1393,7 +1393,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 20,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Fruit Bats", "Langurs", "Civets", "Over 20 bird species"],
+    faunaAffinity: ["Indian Giant Squirrel", "Fruit Bats", "Langurs", "Civets", "Over 20 bird species"],
     nativeStatus: "Native"
   },
   {
@@ -1406,7 +1406,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 17,
     ecologicalRole: "Nectar / Pollinator Anchor",
-    faunaAffinity: ["Primitive Beetles", "Honeybees", "White-eyes", "Grey Slender Loris"],
+    faunaAffinity: ["Primitive Beetles", "Honeybees", "White-eyes", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -1457,7 +1457,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 25,
     typicalCanopySpreadM: 25,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Indian Giant Squirrel", "Koels", "Fruit Bats", "Barbets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Koels", "Fruit Bats", "Barbets"],
     nativeStatus: "Native"
   },
   {
@@ -1482,7 +1482,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 16,
     typicalCanopySpreadM: 14,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Fruit Bats", "Palm Civets", "Lorises"],
+    faunaAffinity: ["Fruit Bats", "Palm Civets", "Asian Palm Civets"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1520,7 +1520,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Barbets", "Owls"],
+    faunaAffinity: ["Indian Giant Squirrel", "Barbets", "Owls"],
     nativeStatus: "Native"
   },
   {
@@ -1545,7 +1545,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 18,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Soil & Nitrogen Fixer",
-    faunaAffinity: ["Common Banded Peacock", "Sunbirds", "Grey Slender Loris"],
+    faunaAffinity: ["Common Banded Peacock", "Sunbirds", "Indian Giant Squirrel"],
     nativeStatus: "Native"
   },
   {
@@ -1571,7 +1571,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 18,
     typicalCanopySpreadM: 16,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Bulbuls", "Barbets", "Flying Foxes"],
+    faunaAffinity: ["Indian Giant Squirrel", "Bulbuls", "Barbets", "Flying Foxes"],
     nativeStatus: "Native"
   },
   {
@@ -1583,7 +1583,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 12,
     typicalCanopySpreadM: 11,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Over 25 Garden Birds", "Palm Civets", "Lorises"],
+    faunaAffinity: ["Over 25 Garden Birds", "Palm Civets", "Asian Palm Civets"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1622,7 +1622,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 20,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Hornbills", "Grey Slender Loris", "Fruit Bats", "Civets"],
+    faunaAffinity: ["Hornbills", "Indian Giant Squirrel", "Fruit Bats", "Civets"],
     nativeStatus: "Native"
   },
   {
@@ -1647,7 +1647,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Fruit Bats", "Grey Slender Loris", "Honeybees", "Squirrels"],
+    faunaAffinity: ["Fruit Bats", "Indian Giant Squirrel", "Honeybees", "Squirrels"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1660,7 +1660,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Nectar / Pollinator Anchor",
-    faunaAffinity: ["Honeybees", "Grey Slender Loris", "Purple Sunbird", "Barbets"],
+    faunaAffinity: ["Honeybees", "Indian Giant Squirrel", "Purple Sunbird", "Barbets"],
     nativeStatus: "Native"
   },
   {
@@ -1685,7 +1685,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 20,
     typicalCanopySpreadM: 16,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Hornbills", "Grey Slender Loris", "Tree Frogs"],
+    faunaAffinity: ["Hornbills", "Indian Giant Squirrel", "Tree Frogs"],
     nativeStatus: "Native"
   },
   {
@@ -1698,7 +1698,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 14,
     typicalCanopySpreadM: 6,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Palm Civets", "Lorises", "Bulbuls", "Fruit Bats"],
+    faunaAffinity: ["Palm Civets", "Asian Palm Civets", "Bulbuls", "Fruit Bats"],
     nativeStatus: "Native"
   },
   {
@@ -1749,7 +1749,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 14,
     typicalCanopySpreadM: 14,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Parakeets", "Babblers", "Squirrels", "Lorises"],
+    faunaAffinity: ["Parakeets", "Babblers", "Squirrels", "Asian Palm Civets"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -1812,7 +1812,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 25,
     typicalCanopySpreadM: 19,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Honeybees", "Woodpeckers"],
+    faunaAffinity: ["Indian Giant Squirrel", "Honeybees", "Woodpeckers"],
     nativeStatus: "Native",
     conservationNote: "Vulnerable red-listed timber"
   },
@@ -1850,7 +1850,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 20,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Parakeets", "Grey Slender Loris", "Owlets"],
+    faunaAffinity: ["Parakeets", "Indian Giant Squirrel", "Owlets"],
     nativeStatus: "Native"
   },
   {
@@ -1912,7 +1912,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 35,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Indian Giant Squirrel", "Owls", "Epiphytic Orchids", "Over 35 bird species"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Owls", "Epiphytic Orchids", "Over 35 bird species"],
     nativeStatus: "Introduced / Naturalized",
     conservationNote: "Critical arterial canopy bridge in Cubbon Park"
   },
@@ -1926,7 +1926,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 14,
     typicalCanopySpreadM: 10,
     ecologicalRole: "Medicinal & Microclimate",
-    faunaAffinity: ["Bulbuls", "Koels", "Root Mycorrhizae", "Grey Slender Loris"],
+    faunaAffinity: ["Bulbuls", "Koels", "Root Mycorrhizae", "Indian Giant Squirrel"],
     nativeStatus: "Native",
     conservationNote: "Vulnerable iconic state tree"
   },
@@ -1966,7 +1966,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 12,
     typicalCanopySpreadM: 11,
     ecologicalRole: "Nectar / Pollinator Anchor",
-    faunaAffinity: ["Sunbirds", "Honeybees", "Grey Slender Loris"],
+    faunaAffinity: ["Sunbirds", "Honeybees", "Indian Giant Squirrel"],
     nativeStatus: "Native",
     conservationNote: "Endangered indigenous heritage flora"
   },
@@ -2065,7 +2065,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Nectar / Pollinator Anchor",
-    faunaAffinity: ["Sunbirds", "Mynas", "Parakeets", "Grey Slender Loris"],
+    faunaAffinity: ["Sunbirds", "Mynas", "Parakeets", "Indian Giant Squirrel"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -2127,7 +2127,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 32,
     typicalCanopySpreadM: 24,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Spotted Owlets", "Giant Flying Squirrel"],
+    faunaAffinity: ["Indian Giant Squirrel", "Spotted Owlets", "Giant Flying Squirrel"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -2139,7 +2139,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 20,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Canopy Birds", "Owlets", "Lorises"],
+    faunaAffinity: ["Canopy Birds", "Owlets", "Asian Palm Civets"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -2152,7 +2152,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 25,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Koels", "Civets", "Fruit Bats", "Barbets"],
+    faunaAffinity: ["Indian Giant Squirrel", "Koels", "Civets", "Fruit Bats", "Barbets"],
     nativeStatus: "Native"
   },
   {
@@ -2203,7 +2203,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 26,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Indian Giant Squirrel", "Parakeets", "Bonnet Macaques"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Parakeets", "Bonnet Macaques"],
     nativeStatus: "Native"
   },
   {
@@ -2241,7 +2241,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 26,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Giant Squirrel", "White-rumped Vultures", "Fruit Bats"],
+    faunaAffinity: ["Indian Giant Squirrel", "Giant Squirrel", "White-rumped Vultures", "Fruit Bats"],
     nativeStatus: "Native"
   },
   {
@@ -2254,7 +2254,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 26,
     typicalCanopySpreadM: 22,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Langurs", "Flying Foxes", "Bark Creepers"],
+    faunaAffinity: ["Indian Giant Squirrel", "Langurs", "Flying Foxes", "Bark Creepers"],
     nativeStatus: "Native"
   },
   {
@@ -2305,7 +2305,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 19,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Barbets", "Woodpeckers"],
+    faunaAffinity: ["Indian Giant Squirrel", "Barbets", "Woodpeckers"],
     nativeStatus: "Native"
   },
   {
@@ -2343,7 +2343,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 24,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Barbets", "Wild Bees"],
+    faunaAffinity: ["Indian Giant Squirrel", "Barbets", "Wild Bees"],
     nativeStatus: "Native"
   },
   {
@@ -2368,7 +2368,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 15,
     typicalCanopySpreadM: 6,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Swifts", "Lorises", "Bats"],
+    faunaAffinity: ["Swifts", "Asian Palm Civets", "Bats"],
     nativeStatus: "Introduced / Naturalized"
   },
   {
@@ -2381,7 +2381,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 12,
     typicalCanopySpreadM: 11,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Civets", "Grey Slender Loris", "Bulbuls", "Monkeys"],
+    faunaAffinity: ["Civets", "Indian Giant Squirrel", "Bulbuls", "Monkeys"],
     nativeStatus: "Native"
   },
   {
@@ -2442,7 +2442,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 22,
     typicalCanopySpreadM: 18,
     ecologicalRole: "Keystone Food Source",
-    faunaAffinity: ["Grey Slender Loris", "Civets", "Langurs", "Fruit Bats"],
+    faunaAffinity: ["Indian Giant Squirrel", "Civets", "Langurs", "Fruit Bats"],
     nativeStatus: "Native"
   },
   {
@@ -2480,7 +2480,7 @@ export const CUBBON_PARK_SPECIES: CubbonTreeSpecies[] = [
     typicalHeightM: 28,
     typicalCanopySpreadM: 32,
     ecologicalRole: "Mother Tree / Continuous Canopy",
-    faunaAffinity: ["Grey Slender Loris", "Indian Giant Squirrel", "Hornbills", "Over 35 bird species"],
+    faunaAffinity: ["Indian Giant Squirrel", "Indian Giant Squirrel", "Hornbills", "Over 35 bird species"],
     nativeStatus: "Native"
   }
 ];

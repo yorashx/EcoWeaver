@@ -109,19 +109,19 @@ function ReportsContent() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FEFAE0] text-[#283618] pt-18">
+    <div className="min-h-screen bg-[#F4F7FA] text-[#01295F] pt-18">
       <div className="print:hidden">
         <Navigation />
       </div>
 
       {/* Control Bar (hidden during printing) */}
-      <div className="print:hidden bg-[#283618] text-[#FEFAE0] border-b border-[#FEFAE0]/15 px-4 sm:px-6 py-4">
+      <div className="print:hidden bg-[#01295F] text-white border-b border-[#437F97]/30 px-4 sm:px-6 py-4">
         <div className="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div>
-            <span className="text-xs font-mono text-[#DDA15E] uppercase block">
+            <span className="text-xs font-mono text-[#FFB30F] uppercase block">
               Audited Ecological Assessment
             </span>
-            <h1 className="font-serif text-xl sm:text-2xl font-bold text-[#FEFAE0]">
+            <h1 className="font-serif text-xl sm:text-2xl font-bold text-white">
               Environmental Impact Report Cards
             </h1>
           </div>
@@ -130,25 +130,25 @@ function ReportsContent() {
             <select
               value={selectedScenario}
               onChange={(e) => setSelectedScenario(e.target.value as any)}
-              className="px-3 py-2 text-xs rounded-xl bg-white/10 border border-[#FEFAE0]/20 text-[#FEFAE0] focus:outline-none focus:border-[#DDA15E]"
+              className="px-3 py-2 text-xs rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-[#FFB30F]"
             >
-              <option value="current" className="bg-[#283618] text-[#FEFAE0]" disabled={currentActions.length === 0}>
+              <option value="current" className="bg-[#01295F] text-white" disabled={currentActions.length === 0}>
                 Current Simulator Scenario {currentActions.length === 0 ? '(run a simulation first)' : ''}
               </option>
-              <option value="tree21" className="bg-[#283618] text-[#FEFAE0]">
+              <option value="tree21" className="bg-[#01295F] text-white">
                 Scenario 1: Tree #021 Felling (Loris Severance)
               </option>
-              <option value="avenue" className="bg-[#283618] text-[#FEFAE0]">
+              <option value="avenue" className="bg-[#01295F] text-white">
                 Scenario 2: Compound Multi-Tree Clearance
               </option>
-              <option value="restoration" className="bg-[#283618] text-[#FEFAE0]">
+              <option value="restoration" className="bg-[#01295F] text-white">
                 Scenario 3: Mitigated Rewilding & Rope Bridge
               </option>
             </select>
 
             <button
               onClick={handlePrint}
-              className="px-4 py-2 bg-[#DDA15E] hover:bg-[#e5b377] text-[#283618] font-bold text-xs rounded-xl shadow transition-all flex items-center space-x-1.5"
+              className="px-4 py-2 bg-[#FFB30F] hover:bg-[#ffbf33] text-[#01295F] font-bold text-xs rounded-xl shadow transition-all flex items-center space-x-1.5"
             >
               <span>🖨️</span>
               <span>Print / Export PDF</span>
@@ -159,22 +159,22 @@ function ReportsContent() {
 
       {/* Printable Report Document */}
       <main className="max-w-5xl mx-auto px-4 sm:px-8 py-10 print:p-0 print:m-0">
-        <article className="bg-white rounded-3xl border border-[#606C38]/20 shadow-xl overflow-hidden print:border-none print:shadow-none">
+        <article className="bg-white rounded-3xl border border-[#437F97]/20 shadow-xl overflow-hidden print:border-none print:shadow-none">
           {/* Header Band */}
-          <header className="bg-gradient-to-r from-[#283618] via-[#606C38] to-[#283618] text-[#FEFAE0] p-8 sm:p-10 border-b border-[#FEFAE0]/15">
+          <header className="bg-gradient-to-r from-[#01295F] via-[#0d3875] to-[#01295F] text-white p-8 sm:p-10 border-b border-white/15">
             <div className="flex items-start justify-between">
               <div>
-                <div className="text-xs font-mono text-[#DDA15E] uppercase tracking-wider mb-1">
+                <div className="text-xs font-mono text-[#FFB30F] uppercase tracking-wider mb-1">
                   ECOWEAVER AI &bull; URBAN ECOLOGICAL TWIN
                 </div>
-                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-[#FEFAE0] leading-tight">
+                <h2 className="font-serif text-2xl sm:text-3xl font-bold text-white leading-tight">
                   {reportData.title}
                 </h2>
-                <div className="text-xs font-mono text-[#FEFAE0]/80 mt-2">
+                <div className="text-xs font-mono text-white/80 mt-2">
                   Document Reference: EW-CP-2026-089 &bull; Standardized Graph-Theory Assessment
                 </div>
               </div>
-              <div className="w-16 h-16 rounded-2xl bg-[#FEFAE0] flex items-center justify-center text-3xl text-[#283618] shadow-md flex-shrink-0">
+              <div className="w-16 h-16 rounded-2xl bg-white flex items-center justify-center text-3xl text-[#01295F] shadow-md flex-shrink-0">
                 🌿
               </div>
             </div>
@@ -182,21 +182,21 @@ function ReportsContent() {
 
           <div className="p-8 sm:p-10 space-y-8 text-xs font-sans">
             {/* Metadata Table */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-6 border-b border-[#606C38]/15">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-6 border-b border-[#437F97]/15">
               <div>
-                <span className="text-[10px] font-mono uppercase text-[#283618]/60 block mb-1">Proposed Action</span>
-                <span className="font-bold text-[#283618]">{reportData.scenarioName}</span>
+                <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block mb-1">Proposed Action</span>
+                <span className="font-bold text-[#01295F]">{reportData.scenarioName}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase text-[#283618]/60 block mb-1">Target Subject</span>
-                <span className="font-bold text-[#283618]">{reportData.targetSubject}</span>
+                <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block mb-1">Target Subject</span>
+                <span className="font-bold text-[#01295F]">{reportData.targetSubject}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase text-[#283618]/60 block mb-1">Location</span>
-                <span className="font-bold text-[#283618]">{reportData.location}</span>
+                <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block mb-1">Location</span>
+                <span className="font-bold text-[#01295F]">{reportData.location}</span>
               </div>
               <div>
-                <span className="text-[10px] font-mono uppercase text-[#283618]/60 block mb-1">Overall Risk</span>
+                <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block mb-1">Overall Risk</span>
                 <span
                   className={`inline-block px-2.5 py-0.5 rounded font-mono font-bold uppercase text-[11px] ${
                     sim.riskLevel === 'critical'
@@ -213,10 +213,10 @@ function ReportsContent() {
 
             {/* Executive Summary */}
             <section className="space-y-2">
-              <h3 className="font-serif text-lg font-bold text-[#283618] uppercase tracking-wider">
+              <h3 className="font-serif text-lg font-bold text-[#01295F] uppercase tracking-wider">
                 1. Executive Scientific Summary
               </h3>
-              <p className="text-sm text-[#283618]/85 leading-relaxed bg-[#FEFAE0] p-4 rounded-2xl border border-[#DDA15E]/30 font-sans">
+              <p className="text-sm text-[#01295F]/85 leading-relaxed bg-[#F4F7FA] p-4 rounded-2xl border border-[#437F97]/30 font-sans">
                 {sim.impactSummary} The affected network currently contains {sim.networkTopology.isolatedCanopyIslands} canopy
                 cluster{sim.networkTopology.isolatedCanopyIslands === 1 ? '' : 's'}, with the largest connected component
                 representing {Math.round(sim.networkTopology.giantComponentRatio * 100)}% of active trees. The modeled
@@ -227,26 +227,26 @@ function ReportsContent() {
 
             {/* Quantitative Network Metrics Table */}
             <section className="space-y-3">
-              <h3 className="font-serif text-lg font-bold text-[#283618] uppercase tracking-wider">
+              <h3 className="font-serif text-lg font-bold text-[#01295F] uppercase tracking-wider">
                 2. Quantitative Ecological Metrics
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
-                  <span className="text-[10px] font-mono uppercase text-[#283618]/60 block">Habitat Connectivity</span>
-                  <div className="text-2xl font-serif font-bold text-[#283618] mt-1">
+                <div className="p-4 rounded-2xl bg-white border border-[#437F97]/20 shadow-sm">
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Habitat Connectivity</span>
+                  <div className="text-2xl font-serif font-bold text-[#01295F] mt-1">
                     {sim.connectivityBefore}% &rarr;{' '}
-                    <span className={sim.connectivityChangePct < 0 ? 'text-[#BC6C25]' : 'text-[#606C38]'}>
+                    <span className={sim.connectivityChangePct < 0 ? 'text-[#FD151B]' : 'text-[#849324]'}>
                       {sim.connectivityAfter}%
                     </span>
                   </div>
-                  <span className="text-[10px] font-mono text-[#BC6C25] font-semibold">
+                  <span className="text-[10px] font-mono text-[#FD151B] font-semibold">
                     {sim.connectivityChangePct}% delta
                   </span>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
-                  <span className="text-[10px] font-mono uppercase text-[#283618]/60 block">Canopy Shadow Area</span>
-                  <div className="text-xl font-serif font-bold text-[#283618] mt-1">
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Canopy Shadow Area</span>
+                  <div className="text-xl font-serif font-bold text-[#01295F] mt-1">
                     {sim.canopyAreaAfterSqM.toLocaleString('en-US')} m²
                   </div>
                   <span className="text-[10px] font-mono text-[#BC6C25] font-semibold">
@@ -255,19 +255,102 @@ function ReportsContent() {
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
-                  <span className="text-[10px] font-mono uppercase text-[#283618]/60 block">Keystone Nodes Severed</span>
-                  <div className="text-2xl font-serif font-bold text-[#BC6C25] mt-1">
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Keystone Nodes Severed</span>
+                  <div className="text-2xl font-serif font-bold text-[#FD151B] mt-1">
                     {sim.criticalNodesLost}
                   </div>
-                  <span className="text-[10px] text-[#283618]/60">Centennial arterial trees</span>
+                  <span className="text-[10px] text-[#01295F]/50">Centennial arterial trees</span>
                 </div>
 
                 <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
-                  <span className="text-[10px] font-mono uppercase text-[#283618]/60 block">Carbon Sequestration</span>
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Carbon Sequestration</span>
                   <div className="text-xl font-serif font-bold text-[#283618] mt-1">
                     -{sim.carbonSequestrationLostKgPerYr} kg
                   </div>
-                  <span className="text-[10px] text-[#283618]/60">Annual lost sink capacity</span>
+                  <span className="text-[10px] text-[#01295F]/50">Annual lost sink capacity</span>
+                </div>
+
+                {/* Soundscape NDSI */}
+                <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Soundscape NDSI</span>
+                  <div className="text-xl font-serif font-bold text-[#283618] mt-1">
+                    {sim.bioacoustics?.soundscapeNdsiBefore ?? 0.42} &rarr;{' '}
+                    <span className={(sim.bioacoustics?.soundscapeNdsiAfter ?? 0.42) < 0.2 ? 'text-[#FD151B]' : 'text-[#849324]'}>
+                      {sim.bioacoustics?.soundscapeNdsiAfter ?? 0.42}
+                    </span>
+                  </div>
+                  <span className="text-[10px] text-[#01295F]/50">Biophony vs Urban Noise ratio</span>
+                </div>
+
+                {/* Loris Vocal Reach */}
+                <div className="p-4 rounded-2xl bg-white border border-[#606C38]/20 shadow-sm">
+                  <span className="text-[10px] font-mono uppercase text-[#01295F]/50 block">Loris Vocal Reach</span>
+                  <div className="text-xl font-serif font-bold text-[#FFB30F] mt-1">
+                    {sim.bioacoustics?.lorisAuditoryReachMetersAfter ?? 38} m
+                  </div>
+                  <span className="text-[10px] text-[#FD151B]/80">
+                    {sim.bioacoustics?.acousticMaskingRisk || 'Low'} masking risk
+                  </span>
+                </div>
+              </div>
+            </section>
+
+            {/* Bioacoustic Sensor Telemetry & Acoustic Ecology Audit */}
+            <section className="space-y-3">
+              <div className="flex items-center justify-between">
+                <h3 className="font-serif text-lg font-bold text-[#01295F] uppercase tracking-wider">
+                  3. Bioacoustic Ecology &amp; Nocturnal Telemetry Audit
+                </h3>
+                <a
+                  href="/bioacoustics"
+                  className="font-mono text-xs font-bold text-[#437F97] hover:underline flex items-center space-x-1"
+                >
+                  <span>Open Bioacoustics Lab</span>
+                  <span>&rarr;</span>
+                </a>
+              </div>
+
+              <div className="p-5 rounded-2xl bg-[#F4F7FA] border border-[#FFB30F]/30 space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-2 border-b border-[#437F97]/15 pb-3">
+                  <div className="flex items-center space-x-2">
+                    <span className="text-xl">🦎</span>
+                    <div>
+                      <span className="font-bold text-sm text-[#01295F]">
+                        Grey Slender Loris (*Loris lydekkerianus*) Acoustic Corridor Analysis
+                      </span>
+                      <span className="text-[11px] font-mono text-[#437F97] block">
+                        Derived from authentic field recordings in the IISc Bangalore sanctuary canopy
+                      </span>
+                    </div>
+                  </div>
+                  <span className="text-xs font-mono px-2.5 py-1 rounded bg-[#01295F] text-white font-bold">
+                    12 - 18 kHz Ultrasonic Harmonic Band
+                  </span>
+                </div>
+
+                <p className="text-xs text-[#01295F]/80 leading-relaxed font-sans">
+                  The in-canopy bioacoustic telemetry array confirms that canopy severance not only interrupts physical arboreal traversal, but also creates an <strong>acoustic dead zone</strong>. In urban Bengaluru, low-frequency vehicular tire and engine rumble (&lt;2 kHz) penetrates severed avenues, explaining why sensitive species like the Grey Slender Loris have been extirpated from central parks and now survive exclusively in IISc near Yeshwantpur. Mating whistle auditory reach is truncated from <strong>{sim.bioacoustics?.lorisAuditoryReachMetersBefore ?? 38} meters down to {sim.bioacoustics?.lorisAuditoryReachMetersAfter ?? 18} meters</strong> under unmitigated road noise.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs font-mono pt-1">
+                  <div className="p-3 rounded-xl bg-white border border-[#437F97]/15">
+                    <span className="text-[#01295F]/50 text-[10px] block">Acoustic Masking Risk</span>
+                    <span className="font-bold text-sm text-[#FD151B]/80">
+                      {sim.bioacoustics?.acousticMaskingRisk || 'Low'}
+                    </span>
+                  </div>
+                  <div className="p-3 rounded-xl bg-white border border-[#437F97]/15">
+                    <span className="text-[#01295F]/50 text-[10px] block">Canopy Acoustic Shielding</span>
+                    <span className="font-bold text-sm text-[#01295F]">
+                      -{sim.bioacoustics?.ultrasonicBufferLossPct ?? 0}% Attenuation
+                    </span>
+                  </div>
+                  <div className="p-3 rounded-xl bg-white border border-[#437F97]/15">
+                    <span className="text-[#01295F]/50 text-[10px] block">Active Canopy IoT Nodes</span>
+                    <span className="font-bold text-sm text-emerald-700">
+                      4 Online (Mesh Telemetry)
+                    </span>
+                  </div>
                 </div>
               </div>
             </section>
@@ -275,7 +358,7 @@ function ReportsContent() {
             {/* Multispecies Fauna Impact Matrix */}
             <section className="space-y-3">
               <h3 className="font-serif text-lg font-bold text-[#283618] uppercase tracking-wider">
-                3. Non-Human Species Impact Assessment
+                4. Non-Human Species Impact Assessment
               </h3>
               <div className="space-y-2">
                 {sim.affectedFauna.map((fauna, idx) => (
@@ -286,7 +369,7 @@ function ReportsContent() {
                     <span className="text-2xl">{fauna.icon}</span>
                     <div className="flex-1">
                       <div className="flex items-center justify-between mb-1">
-                        <span className="font-bold text-sm text-[#283618]">{fauna.speciesName}</span>
+                        <span className="font-bold text-sm text-[#01295F]">{fauna.speciesName}</span>
                         <span
                           className={`text-[10px] font-mono font-bold px-2 py-0.5 rounded ${
                             fauna.impactLevel === 'Critical'
@@ -297,7 +380,7 @@ function ReportsContent() {
                           {fauna.impactLevel} Severity
                         </span>
                       </div>
-                      <p className="text-[#283618]/80 leading-relaxed font-sans">{fauna.reason}</p>
+                      <p className="text-[#01295F]/75 leading-relaxed font-sans">{fauna.reason}</p>
                     </div>
                   </div>
                 ))}
@@ -307,29 +390,29 @@ function ReportsContent() {
             {/* Prescriptive Mitigation Blueprint */}
             <section className="space-y-3">
               <h3 className="font-serif text-lg font-bold text-[#283618] uppercase tracking-wider">
-                4. Prescriptive Mitigation Blueprint
+                5. Prescriptive Mitigation Blueprint
               </h3>
               <div className="space-y-2.5">
                 {sim.mitigationStrategies.map((strat, sIdx) => (
                   <div
                     key={sIdx}
-                    className="p-4 rounded-2xl bg-[#606C38]/10 border border-[#606C38]/20 text-xs flex items-start justify-between gap-4"
+                    className="p-4 rounded-2xl bg-[#849324]/8 border border-[#849324]/20 text-xs flex items-start justify-between gap-4"
                   >
                     <div className="space-y-1">
                       <div className="flex items-center space-x-2">
                         <span className="font-bold text-sm text-[#283618]">{strat.title}</span>
-                        <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#BC6C25] text-white">
+                        <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-[#FFB30F] text-[#01295F]">
                           {strat.priority} Priority
                         </span>
                       </div>
-                      <p className="text-[#283618]/80 leading-relaxed">{strat.action}</p>
-                      <div className="text-[11px] font-mono text-[#606C38] font-semibold">
+                      <p className="text-[#01295F]/75 leading-relaxed">{strat.action}</p>
+                      <div className="text-[11px] font-mono text-[#849324] font-semibold">
                         Implementation Window: {strat.timeline}
                       </div>
                     </div>
                     <div className="text-right flex-shrink-0">
                       <span className="text-[10px] font-mono text-[#283618]/60 block">Restoration Factor</span>
-                      <span className="font-serif text-xl font-bold text-[#606C38]">
+                      <span className="font-serif text-xl font-bold text-[#849324]">
                         +{strat.effectivenessPct}%
                       </span>
                     </div>
@@ -339,15 +422,15 @@ function ReportsContent() {
             </section>
 
             {/* Signature & Custodian Sign-off */}
-            <footer className="pt-8 border-t border-[#606C38]/20 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 text-[11px] font-mono text-[#283618]/70">
+            <footer className="pt-8 border-t border-[#437F97]/20 flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 text-[11px] font-mono text-[#01295F]/60">
               <div>
                 <div>Audited by EcoWeaver AI Environmental Engine v2.4</div>
                 <div>Cubbon Park Planetary Stewardship Consortium</div>
                 <div>Bengaluru, Karnataka &bull; ISO-14001 Compliant Framework</div>
               </div>
               <div className="text-right">
-                <div className="font-serif text-base font-bold text-[#283618]">Planetary Stewardship Certified</div>
-                <div className="text-[#606C38]">🌿 Non-Human Coexistence Protocol Verified</div>
+                <div className="font-serif text-base font-bold text-[#01295F]">Planetary Stewardship Certified</div>
+                <div className="text-[#849324]">🌿 Non-Human Coexistence Protocol Verified</div>
               </div>
             </footer>
           </div>
@@ -361,7 +444,7 @@ export default function ReportsPage() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-[#283618] flex items-center justify-center text-[#FEFAE0]">
+        <div className="min-h-screen bg-[#01295F] flex items-center justify-center text-white">
           Loading ecological report...
         </div>
       }
