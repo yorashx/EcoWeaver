@@ -1,8 +1,9 @@
 import { Tree, Species, Corridor } from '@/types';
 import { CUBBON_TREES, CUBBON_CORRIDORS } from './cubbon-tree-inventory';
+import { IISC_TREES, IISC_CORRIDORS } from './iisc-tree-inventory';
 import { CUBBON_PARK_SPECIES, CubbonTreeSpecies, CUBBON_ZONES } from './cubbon-species-data';
 
-// Singleton in-memory state representing the living Cubbon Park ecological twin
+// Singleton in-memory state representing the living Bangalore ecological twin (IISc & Cubbon)
 class CubbonDataStore {
   private trees: Tree[] = [];
   private corridors: Corridor[] = [];
@@ -13,15 +14,22 @@ class CubbonDataStore {
   }
 
   public reset() {
-    // Deep clone initial trees and corridors
-    this.trees = JSON.parse(JSON.stringify(CUBBON_TREES));
-    this.corridors = JSON.parse(JSON.stringify(CUBBON_CORRIDORS));
+    // Deep clone initial trees and corridors (combining IISc Loris Sanctuary and Cubbon Park Forest)
+    this.trees = [
+      ...JSON.parse(JSON.stringify(IISC_TREES)),
+      ...JSON.parse(JSON.stringify(CUBBON_TREES)),
+    ];
+    this.corridors = [
+      ...JSON.parse(JSON.stringify(IISC_CORRIDORS)),
+      ...JSON.parse(JSON.stringify(CUBBON_CORRIDORS)),
+    ];
     this.speciesList = [...CUBBON_PARK_SPECIES];
   }
 
   // Trees CRUD
   public getTrees(filters?: {
     zone?: string;
+    campus?: 'all' | 'iisc' | 'cubbon';
     ecologicalValue?: string;
     search?: string;
     status?: string;
@@ -31,6 +39,14 @@ class CubbonDataStore {
 
     if (filters?.status) {
       result = result.filter(t => t.status === filters.status);
+    }
+
+    if (filters?.campus && filters.campus !== 'all') {
+      if (filters.campus === 'iisc') {
+        result = result.filter(t => t.projectId === 2 || t.metadata?.campus === 'iisc');
+      } else if (filters.campus === 'cubbon') {
+        result = result.filter(t => t.projectId === 1 && t.metadata?.campus !== 'iisc');
+      }
     }
 
     if (filters?.zone && filters.zone !== 'all') {
@@ -149,7 +165,13 @@ class CubbonDataStore {
   }
 
   // Corridors
-  public getCorridors(): Corridor[] {
+  public getCorridors(campus?: 'all' | 'iisc' | 'cubbon'): Corridor[] {
+    if (campus === 'iisc') {
+      return this.corridors.filter(c => c.projectId === 2);
+    }
+    if (campus === 'cubbon') {
+      return this.corridors.filter(c => c.projectId === 1);
+    }
     return this.corridors;
   }
 

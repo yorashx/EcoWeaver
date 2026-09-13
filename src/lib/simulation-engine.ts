@@ -41,6 +41,16 @@ export interface AdvancedSimulationResult {
     giantComponentRatio: number;
     totalActiveTrees: number;
   };
+  bioacoustics: {
+    soundscapeNdsiBefore: number;
+    soundscapeNdsiAfter: number;
+    ndsiChangePct: number;
+    lorisAuditoryReachMetersBefore: number;
+    lorisAuditoryReachMetersAfter: number;
+    acousticMaskingRisk: 'Low' | 'Moderate' | 'Severe' | 'Critical';
+    sensorNodesAffected: number;
+    ultrasonicBufferLossPct: number;
+  };
 }
 
 export class SimulationEngine {
@@ -276,15 +286,28 @@ export class SimulationEngine {
     const affectedFauna: AdvancedSimulationResult['affectedFauna'] = [];
 
     const hasLorisAnchorRemoved = removedTreeDetails.some(
-      t => t.id === 21 || t.isCriticalNode || t.species?.includes('Ficus') || t.species?.includes('Samanea')
+      t => t.projectId === 2 || t.metadata?.campus === 'iisc' || t.metadata?.hasLorisSighting
     );
 
     if (hasLorisAnchorRemoved) {
       affectedFauna.push({
         speciesName: 'Grey Slender Loris (Loris lydekkerianus)',
         impactLevel: 'Critical',
-        reason: 'Arterial canopy path severed. Lorises cannot traverse gaps >3m without descending to ground, risking stray dog attacks and road mortality.',
+        reason: 'IISc sanctuary arboreal link severed. Lorises cannot traverse gaps >2m without mortal ground descent risk in their last Bengaluru stronghold.',
         icon: '🦎',
+      });
+    }
+
+    const hasSquirrelAnchorRemoved = removedTreeDetails.some(
+      t => t.id === 21 || t.isCriticalNode || t.species?.includes('Ficus') || t.species?.includes('Samanea')
+    );
+
+    if (hasSquirrelAnchorRemoved) {
+      affectedFauna.push({
+        speciesName: 'Indian Giant Squirrel & Asian Palm Civet',
+        impactLevel: 'Severe',
+        reason: 'Arboreal canopy path severed. Squirrels and civets forced across ground avenues risking vehicle collisions.',
+        icon: '🐿️',
       });
     }
 
@@ -359,6 +382,33 @@ export class SimulationEngine {
           } canopy clusters and forfeiting ${canopyAreaLostSqM.toLocaleString('en-US')} m² of continuous shade.`
         : `Simulation completed. Network maintains ${connectivityAfter}% habitat connectivity across Cubbon Park with ${afterComponents.length} connected canopy components.`;
 
+    // Bioacoustic impact calculations
+    const sensorTreeIds = [21, 1, 5, 10];
+    const sensorNodesAffected = removedTreeDetails.filter(t => sensorTreeIds.includes(t.id)).length;
+    
+    const hasTree21Removed = removedTreeDetails.some(t => t.id === 21);
+    const soundscapeNdsiBefore = 0.42;
+    let ndsiPenalty = removedTreeDetails.length * 0.12 + (hasTree21Removed ? 0.18 : 0);
+    let ndsiBonus = bridges.length * 0.14 + plantedTreeCount * 0.08;
+    const soundscapeNdsiAfter = Number(Math.max(-0.8, Math.min(0.85, soundscapeNdsiBefore - ndsiPenalty + ndsiBonus)).toFixed(2));
+    const ndsiChangePct = Number((((soundscapeNdsiAfter - soundscapeNdsiBefore) / soundscapeNdsiBefore) * 100).toFixed(1));
+
+    const lorisAuditoryReachMetersBefore = 38;
+    let reachPenalty = removedTreeDetails.length * 5 + (hasTree21Removed ? 14 : 0);
+    let reachBonus = bridges.length * 8 + plantedTreeCount * 3;
+    const lorisAuditoryReachMetersAfter = Math.max(8, Math.min(48, lorisAuditoryReachMetersBefore - reachPenalty + reachBonus));
+
+    let acousticMaskingRisk: 'Low' | 'Moderate' | 'Severe' | 'Critical' = 'Low';
+    if (hasTree21Removed || ndsiPenalty >= 0.25) {
+      acousticMaskingRisk = 'Critical';
+    } else if (removedTreeDetails.length >= 2 || ndsiPenalty >= 0.15) {
+      acousticMaskingRisk = 'Severe';
+    } else if (removedTreeDetails.length === 1) {
+      acousticMaskingRisk = 'Moderate';
+    }
+
+    const ultrasonicBufferLossPct = Math.min(100, Math.round((canopyAreaLostSqM / Math.max(1, canopyAreaBeforeSqM)) * 320));
+
     return {
       connectivityBefore,
       connectivityAfter,
@@ -385,6 +435,16 @@ export class SimulationEngine {
           (Math.max(...afterComponents.map(c => c.size), 0) / Math.max(workingTrees.length, 1)).toFixed(2)
         ),
         totalActiveTrees: workingTrees.length,
+      },
+      bioacoustics: {
+        soundscapeNdsiBefore,
+        soundscapeNdsiAfter,
+        ndsiChangePct,
+        lorisAuditoryReachMetersBefore,
+        lorisAuditoryReachMetersAfter,
+        acousticMaskingRisk,
+        sensorNodesAffected,
+        ultrasonicBufferLossPct,
       },
     };
   }

@@ -79,21 +79,20 @@ Then follow this sequence:
 1. Open **Map** and select a tree to inspect its profile.
 2. Return to **Simulator** and run the featured tree-removal scenario.
 3. Compare the connectivity, canopy, corridor, and risk metrics.
-4. Open **Nature's Domino** to see the consequence chain as a narrative sequence.
-5. Open **Reports** to review the stakeholder-facing impact summary and mitigation guidance.
+4. Open **Bioacoustic AI** (`/bioacoustics`) to inspect urban bird and nocturnal audio recordings.
+5. Open **Impact Reports** to generate an environmental impact statement.
 
-Other routes:
+### Key routes
 
 | Route | Purpose |
 | --- | --- |
-| `/` | Product overview and entry points |
-| `/map` | Interactive tree and corridor map |
-| `/species` | Species catalogue |
-| `/simulator` | Scenario modelling |
-| `/canopy-guardian` | Ecological monitoring view |
-| `/domino` | Impact cascade visualisation |
-| `/reports` | Impact report view |
-| `/about` | Project context |
+| `/` | Landing page and project overview |
+| `/map` | Interactive tree inventory and corridor map |
+| `/species` | Catalogue of documented tree species |
+| `/simulator` | Scenario modeling and connectivity changes |
+| `/bioacoustics` | Bioacoustic AI and real-time sensor streams |
+| `/canopy-guardian` | Network metrics and health monitoring |
+| `/reports` | Printable environmental impact statements |
 
 ## 6. Verify Changes
 
