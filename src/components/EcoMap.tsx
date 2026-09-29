@@ -33,6 +33,7 @@ export default function EcoMap({
   showCorridors = true,
 }: EcoMapProps) {
   const mapContainerRef = useRef<HTMLDivElement>(null);
+  const initialCenterRef = useRef(center);
   const mapRef = useRef<any>(null);
   const markersGroupRef = useRef<any>(null);
   const canopyCirclesGroupRef = useRef<any>(null);
@@ -56,7 +57,7 @@ export default function EcoMap({
         // Initialize Leaflet map
         const map = L.map(mapContainerRef.current, {
           zoomControl: false,
-        }).setView([center.lat, center.lng], 16);
+        }).setView([initialCenterRef.current.lat, initialCenterRef.current.lng], 16);
 
         L.control.zoom({ position: 'bottomright' }).addTo(map);
 
@@ -108,7 +109,7 @@ export default function EcoMap({
         mapRef.current = null;
       }
     };
-  }, [center.lat, center.lng]);
+  }, []);
 
   // Update trees, markers, canopy rings, and corridors when data or selection changes
   useEffect(() => {
@@ -242,7 +243,7 @@ export default function EcoMap({
 
   // Handle center changes dynamically with smooth flyTo
   useEffect(() => {
-    if (mapRef.current && center) {
+    if (mapRef.current) {
       mapRef.current.flyTo([center.lat, center.lng], 16, { duration: 1.2 });
     }
   }, [center.lat, center.lng]);
