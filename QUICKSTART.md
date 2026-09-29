@@ -33,6 +33,14 @@ DATABASE_URL=postgresql://postgres:postgres@127.0.0.1:5432/ecoweaver
 
 The application reads `DATABASE_URL` at runtime. Keep `.env.local` out of version control and use a separate database for local work, staging, and production.
 
+The map also needs a CARTO browser API key:
+
+```env
+NEXT_PUBLIC_CARTO_API_KEY=your-carto-api-key
+```
+
+Keep the key restricted to your deployed domains where supported. Restart the development server after changing it.
+
 The Drizzle CLI reads the same `DATABASE_URL` from `.env.local` through `drizzle.config.ts`, so the application and schema commands use one connection setting.
 
 Push the current schema:
@@ -120,6 +128,10 @@ Confirm PostgreSQL is running, the database exists, the credentials are correct,
 ### The seed route fails
 
 Push the schema before seeding. The seed operation is additive and is intended for a fresh demo database; repeated runs can create duplicate demo records.
+
+### The map shows `API KEY REQUIRED`
+
+Add `NEXT_PUBLIC_CARTO_API_KEY` to the deployment environment and redeploy. Public Next.js environment variables are embedded during the build, so restarting the running process alone is not enough.
 
 ### The map is blank
 
