@@ -9,6 +9,7 @@ EcoWeaver AI is a Next.js Node application with a PostgreSQL dependency. The web
 - `DATABASE_URL` configured as a server-side secret
 - A deployment build that runs `npm install` and `npm run build`
 - A start command of `npm start`
+- `NEXT_PUBLIC_CARTO_API_KEY` configured for the browser map tiles
 
 Do not commit `.env.local`, database URLs, or provider credentials.
 
@@ -42,7 +43,7 @@ Review the build output for missing environment variables or server-only imports
 1. Push the repository to GitHub, GitLab, or Bitbucket.
 2. Import the repository into Vercel.
 3. Keep the framework preset as **Next.js** and the root directory at the repository root.
-4. Add `DATABASE_URL` under the project environment variables for Preview and Production as appropriate.
+4. Add `DATABASE_URL` and `NEXT_PUBLIC_CARTO_API_KEY` under the project environment variables for Preview and Production as appropriate.
 5. Deploy with the default build settings, or use:
 
    ```text
@@ -55,6 +56,8 @@ Review the build output for missing environment variables or server-only imports
 7. Apply the schema from a trusted machine, then redeploy if necessary.
 8. Seed only a fresh demo or staging database.
 
+The map uses CARTO raster tiles in the browser. Create a CARTO API key and add it as `NEXT_PUBLIC_CARTO_API_KEY`; because it is sent to the browser, configure the key's allowed domains/referrers in CARTO when that restriction is available. Redeploy after adding or changing this variable because Next.js embeds public environment variables during the build.
+
 Vercel's database product offerings change over time. The app does not require a provider-specific PostgreSQL integration; it requires a standard PostgreSQL connection string.
 
 ## Other Node Hosts
@@ -66,6 +69,7 @@ Build:  npm install && npm run build
 Start:  npm start
 Port:   3000, or the platform-provided PORT when supported
 Secret: DATABASE_URL=<managed PostgreSQL connection string>
+Public: NEXT_PUBLIC_CARTO_API_KEY=<CARTO browser API key>
 ```
 
 Use the provider's private database URL when the web service and database share a private network. Use the public URL only when the platform requires it.

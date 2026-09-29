@@ -56,15 +56,20 @@ export default function EcoMap({
         // Initialize Leaflet map
         const map = L.map(mapContainerRef.current, {
           zoomControl: false,
-          attributionControl: false,
         }).setView([center.lat, center.lng], 16);
 
         L.control.zoom({ position: 'bottomright' }).addTo(map);
 
         // Nature-harmonious carto tiles
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+        const cartoApiKey = process.env.NEXT_PUBLIC_CARTO_API_KEY;
+        const cartoTileUrl = `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png${
+          cartoApiKey ? `?key=${encodeURIComponent(cartoApiKey)}` : ''
+        }`;
+
+        L.tileLayer(cartoTileUrl, {
           maxZoom: 19,
           subdomains: 'abcd',
+          attribution: '&copy; CARTO &copy; OpenStreetMap contributors',
         }).addTo(map);
 
         // Layer groups for markers, canopies, and corridors
